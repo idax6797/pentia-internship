@@ -1,18 +1,17 @@
 @import url(../../index.scss);
 
-.logo-container{
+.logo-container {
   position: fixed;
-  top: 0;
-  left: calc(12px);
+  top: 12px;
+  left: 12px;
   z-index: 4;
-  
   width: 30px;
   height: 30px;
 
   img {
-    background-color: lime;
+    background-color: var(--light-contrast-color);
+    padding: 2px;
   }
-
 }
 
 .navigation {
@@ -61,12 +60,12 @@
   width: 100px;
   background-color: var(--dark-contrast-color);
   position: fixed;
-  width: calc(16px + 16px + 24px);
+  width: calc(56px);
   top: 0;
   left: 0;
   z-index: 3;
 
-  .menu-container__button {
+  &__button {
     position: fixed;
     width: 24px;
     top: 50%;
@@ -74,6 +73,10 @@
     padding: 0;
     background: none;
     cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
 
     &--active {
       .menu-container__button-bar {

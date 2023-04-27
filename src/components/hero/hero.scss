@@ -1,0 +1,92 @@
+@import url(../../index.scss);
+
+.hero {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100vw - 56px);
+  height: 100vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__head-text {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    margin: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-height: 250px;
+      height: 100%;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    &-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+      width: 100%;
+
+      p {
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  &__scroll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    &-dots {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12px;
+    }
+    &-dot {
+      border-radius: 50%;
+      background: var(--light-contrast-color);
+      margin-bottom: 4px;
+      animation: dot-animation 2s ease-in-out infinite alternate;
+      
+      &:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+
+      &:nth-child(3) {
+        animation-delay: 0.1s;
+      }
+    }
+  }
+}
+
+@keyframes dot-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

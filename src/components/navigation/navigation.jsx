@@ -15,7 +15,9 @@ export default function Navigation() {
   return (
     <>
       <div className="logo-container">
-        <img src="../../../src/assets/icon/logo.svg" alt="Pentia" />
+        <a href="#">
+          <img src="../../../src/assets/icon/logo.svg" alt="Pentia" />
+        </a>
       </div>
       <nav className={`navigation ${isOpen ? "navigation--open" : ""}`}>
         <ul className="navigation__menu">
