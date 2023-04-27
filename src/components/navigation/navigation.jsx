@@ -9,11 +9,14 @@ export default function Navigation() {
   }
   const bars = [];
   for (let i = 0; i < 3; i++) {
-    bars.push(<span key={i} className="menu-button__bar"></span>);
+    bars.push(<span key={i} className="menu-container__button-bar"></span>);
   }
 
   return (
     <>
+      <div className="logo-container">
+        <img src="../../../src/assets/icon/logo.svg" alt="Pentia" />
+      </div>
       <nav className={`navigation ${isOpen ? "navigation--open" : ""}`}>
         <ul className="navigation__menu">
           <li className="navigation__menu-item">
@@ -27,9 +30,16 @@ export default function Navigation() {
           </li>
         </ul>
       </nav>
-      <button className={`menu-button ${isOpen ? "menu-button--active" : ""}`} onClick={toggleMenu}>
-        {bars}
-      </button>
+      <div className="menu-container">
+        <button
+          className={`menu-container__button ${
+            isOpen ? "menu-container__button--active" : ""
+          }`}
+          onClick={toggleMenu}
+        >
+          {bars}
+        </button>
+      </div>
     </>
   );
 }
