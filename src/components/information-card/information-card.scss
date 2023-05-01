@@ -1,0 +1,24 @@
+@import url(../../index.scss);
+
+.information-card {
+  position: relative;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-color);
+  padding: 60px;
+  text-align: center;
+
+  img {
+    height: 200px;
+    width: 100%;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

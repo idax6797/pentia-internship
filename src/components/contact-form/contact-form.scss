@@ -1,0 +1,45 @@
+@import url(../../index.scss);
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 500px;
+
+  .form-section {
+    width: 230px;
+    label {
+      width: 100%;
+      font-size: 14px;
+      font-weight: 500;
+      display: block;
+      transition: all 0.2s ease-in-out;
+    }
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1.5px solid var(--light-contrast-color);
+      font-size: 16px;
+      font-weight: 500;
+      background-color: transparent;
+      transition: all 0.2s ease-in-out;
+
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid var(--secondary-color);
+      }
+    }
+
+    &--wide {
+      width: 500px;
+    }
+
+    &--btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }
+}

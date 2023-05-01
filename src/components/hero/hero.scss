@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  scroll-snap-align: center;
 
   &__head-text {
     position: absolute;
@@ -31,10 +32,12 @@
 
     h1 {
       margin: 0;
+      font-weight: 900;
     }
 
     h3 {
       margin-top: 0;
+      font-weight: 400;
     }
 
     &-description {
@@ -69,24 +72,16 @@
       border-radius: 50%;
       background: var(--light-contrast-color);
       margin-bottom: 4px;
-      animation: dot-animation 2s ease-in-out infinite alternate;
-      
-      &:nth-child(2) {
-        animation-delay: 0.1s;
-      }
-
-      &:nth-child(3) {
-        animation-delay: 0.1s;
-      }
+      animation: dotAnimation 2s ease-in-out infinite alternate;
     }
   }
 }
 
-@keyframes dot-animation {
+@keyframes dotAnimation {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
 }
