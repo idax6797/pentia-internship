@@ -1,4 +1,3 @@
-import "./App.scss";
 import Navigation from "./components/navigation/navigation";
 import Hero from "./components/hero/hero";
 import Information from "./components/Information/information";

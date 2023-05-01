@@ -16,7 +16,6 @@ export default function ContactForm() {
           <label htmlFor="email">e-mail</label>
           <input type="email" id="email" name="email" />
         </div>
-
         <div className="form-section">
           <label htmlFor="zipcode">Postnr.</label>
           <input type="text" id="zipcode" name="zipcode" />
