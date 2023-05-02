@@ -16,7 +16,7 @@ export default function Navigation() {
     <>
       <div className="logo-container">
         <a href="#">
-          <img src="../../../src/assets/icon/logo.svg" alt="Pentia" />
+          <img src="src/assets/icon/logo.svg" alt="Pentia" />
         </a>
       </div>
       <nav className={`navigation ${isOpen ? "navigation--open" : ""}`}>
@@ -34,6 +34,7 @@ export default function Navigation() {
       </nav>
       <div className="menu-container">
         <button
+          aria-label="menu"
           className={`menu-container__button ${
             isOpen ? "menu-container__button--active" : ""
           }`}

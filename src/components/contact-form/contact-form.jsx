@@ -6,7 +6,6 @@ export default function ContactForm() {
   const [showModal, setShowModal] = useState(false);
   const formRef = useRef(null);
 
-
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -54,7 +53,10 @@ export default function ContactForm() {
         </div>
       </form>
       {showModal && (
-        <ContactFormModal showModal={showModal} handleCloseModal={handleCloseModal} />
+        <ContactFormModal
+          showModal={showModal}
+          handleCloseModal={handleCloseModal}
+        />
       )}
     </>
   );

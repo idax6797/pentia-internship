@@ -1,8 +1,8 @@
 import "../hero/hero.scss";
 
 export default function Hero() {
-  const dotSize = [2, 4, 6]; // array of dot widths
-  const dots = []; // array to hold JSX elements
+  const dotSize = [2, 4, 6];
+  const dots = [];
 
   for (let i = 0; i < dotSize.length; i++) {
     dots.push(
@@ -18,7 +18,7 @@ export default function Hero() {
     <section className="hero">
       <p className="hero__head-text">Lorem Ipsum</p>
       <div className="hero__content">
-        <img src="../../../src/assets/icon/zeppeliner.svg" alt="Airship" />
+        <img src="src/assets/icon/zeppeliner.svg" alt="Airship" />
         <h1>Digital transformation</h1>
         <h3>Rådgivning, Implementering, Resultater</h3>
         <div className="hero__content-description">

@@ -14,7 +14,7 @@ export default function Contact() {
       </div>
       <div className="contact__prize">
         <img
-          src="../../../src/assets/icon/prize.svg"
+          src="src/assets/icon/prize.svg"
           alt="Digital innovations pris"
         />
         <p>Pentia vinder pris for digital innovation 2017</p>
